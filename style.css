@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  overflow: hidden;
+}
+
 i {
   cursor: pointer;
 }
+
 nav {
   display: flex;
   height: 3.4rem;
@@ -12,22 +18,22 @@ nav {
   justify-content: space-between;
   box-shadow: 1px 1px 0 0 rgb(130, 129, 129);
   width: 100%;
-  /* scale: 1; */
-  /* width: min-content; */
   position: fixed;
-  /* background-color: rgb(95, 17, 17); */
   z-index: 1;
 }
+
 .youtubeimg {
   height: 2.5rem;
   margin-left: 1.25rem;
 }
+
 #search-bar {
   height: 2rem;
   width: 30rem;
   border-radius: 0.2rem none;
   border: 1px solid rgba(182, 179, 179, 0.94);
 }
+
 #searchbtn {
   /* margin-top: 0.5rem; */
   padding-inline: 1rem;
@@ -35,6 +41,7 @@ nav {
   border: 1px solid rgba(223, 219, 219, 0.758);
   height: 2.25rem;
 }
+
 #voice {
   margin-top: 0.5rem;
   margin-left: 1rem;
@@ -45,25 +52,25 @@ nav {
   margin-left: 0%;
   display: flex;
   padding: 1rem;
-  /* height: 5rem;  */
-  /* justify-content: center; */
   align-items: center;
 }
+
 .navbar-m {
   padding: 0.5rem;
   align-content: center;
   display: flex;
   flex-direction: row;
 }
+
 .navbar-r {
   padding: 1rem;
   padding-inline: 0;
   width: 11rem;
-  /* background-color: aqua; */
   align-content: center;
   display: flex;
   justify-content: space-around;
 }
+
 ::-webkit-scrollbar {
   width: 17px;
 }
@@ -73,4 +80,13 @@ nav {
   background-clip: padding-box;
   border-radius: 9999px;
   background-color: #646464;
+}
+
+.sidebar button {
+  cursor: pointer;
+  padding: 0.45rem;
+}
+
+.sidebar button:hover {
+  background-color: #dcdcdc;
 }
