@@ -1,0 +1,146 @@
+.content {
+  position: relative;
+  /* background: red; */
+  left: 15rem;
+  width: 83vw;
+  top: 3.47rem;
+}
+.div1 {
+  background: rgb(255, 255, 255);
+  height: 5rem;
+  width: 18rem;
+}
+.div2 {
+  height: 2rem;
+  width: 18rem;
+}
+.filtr {
+  position: fixed;
+  z-index: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  background: rgb(255, 255, 255);
+  /* top: 4rem; */
+  /* left: 14rem; */
+  width: 83vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  /* margin: 12px; */
+}
+.fil {
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 2rem;
+  border: 0.1px solid rgb(205, 205, 205);
+  cursor: pointer;
+}
+.fil:active {
+  color: aliceblue;
+  background: black;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 3;
+  top: 3rem;
+  /* background-color: rgb(223, 0, 0); */
+  width: 14rem;
+  height: 41.5rem;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-content: center;
+}
+.sidebar:hover {
+  overflow: auto;
+}
+.sidebar button {
+  background: white;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  left: 0.5rem;
+  display: flex;
+  padding-left: 1.5rem;
+  /* justify-content: center; */
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border: none;
+}
+hr {
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
+  /* padding-right: 2rem; */
+  background-color: rgb(161, 161, 167);
+  /* margin-right: 1rem; */
+}
+.sidebar p {
+  /* padding: 0.25rem; */
+  /* font-weight: bold; */
+}
+.sidebar button:focus {
+  font-weight: bold;
+  fill: 0;
+  background: rgb(181, 181, 181);
+}
+/* .sidebar::-webkit-scrollbar {
+  width: 18px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: rgb(123, 123, 123);
+} */
+.forgrid {
+  position: relative;
+  background: rgb(255, 255, 255);
+  top: 4rem;
+  width: 83vw;
+  /* left: 14rem; */
+  height: 10rem;
+}
+.forgrid p {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* background-color: #2196f3; */
+  /* padding: 10px; */
+  grid-gap: 15px;
+  font-size: 1px;
+  font-size: 15px;
+  border: none;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* padding: 20px; */
+  /* text-align: center; */
+}
+
+.thumbnail {
+  height: 10rem;
+  width: 18rem;
+}
+.gridimg {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.videoimg {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
