@@ -33,6 +33,7 @@ nav {
   width: 30rem;
   border-radius: 0.2rem none;
   border: 1px solid rgba(182, 179, 179, 0.94);
+  padding-left: 6px;
 }
 
 #searchbtn {
