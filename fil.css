@@ -92,14 +92,6 @@ hr {
   height: 10px;
   background-color: rgb(123, 123, 123);
 } */
-.forgrid {
-  position: relative;
-  background: rgb(255, 255, 255);
-  top: 4rem;
-  width: 83vw;
-  /* left: 14rem; */
-  height: 10rem;
-}
 .forgrid p {
   padding: 1rem;
 }
