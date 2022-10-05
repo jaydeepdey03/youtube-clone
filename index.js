@@ -21,3 +21,24 @@ function search() {
     window.open("https://www.youtube.com/results?search_query=" + str);
 
 }
+
+let mainContent = document.getElementById('main-content');
+
+const contents = Array(17).fill().map(() => ({
+  title: 'kesariya tera ishq hai piya, arijit singh new song, ranbir kapoor alia bhat, kesariya full song',
+  thumbnail: 'pic.jpg',
+  videoimg: 'logo.jpg',
+}))
+
+contents.forEach(({title, thumbnail, videoimg}) => {
+  mainContent.innerHTML += `
+    <div class="grid-item">
+      <img class="thumbnail" src="${thumbnail}" alt="" />
+      <div class="div1" style="">
+        <img class="videoimg" src="${videoimg}" alt="" />
+        <p>${title}</p>
+      </div>
+      <div class="div2"></div>
+    </div>
+  `;
+});
