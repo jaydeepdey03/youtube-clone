@@ -32,3 +32,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
   <img src="https://contrib.rocks/image?repo=jaydeepdey03/youtube-clone" />
 </a>
 
+## Features:
+
+- Search
+- Fixed sidebar and Navbar
