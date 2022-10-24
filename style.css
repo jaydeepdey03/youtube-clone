@@ -12,6 +12,16 @@ i {
   cursor: pointer;
 }
 
+.dark {
+  background-color: rgb(40, 40, 40) !important;
+  color: white !important;
+}
+
+.darker {
+  background-color: rgb(22, 22, 22) !important;
+  color: white !important;
+}
+
 nav {
   display: flex;
   height: 3.4rem;
@@ -34,6 +44,7 @@ nav {
   border-radius: 0.2rem none;
   border: 1px solid rgba(182, 179, 179, 0.94);
   padding-left: 6px;
+  background-color: transparent;
 }
 
 #searchbtn {
