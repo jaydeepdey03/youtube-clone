@@ -1,24 +1,22 @@
 let searchBar = document.getElementById('search-bar')
-
-
-
+let nav = document.getElementById('nav')
 
 function search() {
-    let str = "";
-    let val = searchBar.value;
-    // console.log(val)
-    let n = 0;
+  let str = "";
+  let val = searchBar.value;
+  // console.log(val)
+  let n = 0;
 
-    while (n < val.length) {
-        if (val[n] == ' ')
-            str += '+'
-        else
-            str += val[n];
+  while (n < val.length) {
+    if (val[n] == ' ')
+      str += '+'
+    else
+      str += val[n];
 
-        n = n + 1;
-    }
-    // console.log(str)
-    window.open("https://www.youtube.com/results?search_query=" + str);
+    n = n + 1;
+  }
+  // console.log(str)
+  window.open("https://www.youtube.com/results?search_query=" + str);
 
 }
 
@@ -31,7 +29,7 @@ const contents = Array(17).fill().map(() => ({
   videoimg: "https://via.placeholder.com/300",
 }))
 
-contents.forEach(({title, thumbnail, videoimg}) => {
+contents.forEach(({ title, thumbnail, videoimg }) => {
   mainContent.innerHTML += `
     <div class="grid-item">
       <img class="thumbnail" src="${thumbnail}" alt="" />
@@ -43,3 +41,24 @@ contents.forEach(({title, thumbnail, videoimg}) => {
     </div>
   `;
 });
+
+let coll = document.getElementsByClassName('div1')
+const filter = document.getElementsByClassName('filtr')[0]
+const sideBtns = document.getElementsByClassName('sideBtn')
+
+function toggleTheme() {
+
+  document.body.classList.toggle("dark")
+  nav.classList.toggle("dark")
+  filter.classList.toggle("dark")
+
+  for (let i = 0; i < sideBtns.length; i++) {
+    sideBtns[i].classList.toggle("dark")
+  }
+
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].classList.toggle("dark")
+  }
+  mainContent.classList.toggle('darker')
+}
+toggleTheme()
